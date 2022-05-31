@@ -4,6 +4,19 @@ import numpy as np
 import streamlit as st
 import yfinance as yf
 import plotly.express as px
+from PIL import Image
+
+image = Image.open('stonks.jpeg')
+st.set_page_config(page_title='tradingideas',page_icon=image)
+
+hide_menu_style = """
+        <style>
+        #MainMenu {visibility: hidden; }
+        footer {visibility: hidden;}
+        </style>
+        """
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
 
 def remove_duplicate(l:list):
     return list(dict.fromkeys(l))
