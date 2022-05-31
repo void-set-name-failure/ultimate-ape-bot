@@ -6,8 +6,8 @@ import yfinance as yf
 import plotly.express as px
 from PIL import Image
 
-image = Image.open('stonks.jpeg')
-st.set_page_config(page_title='tradingideas',page_icon=image)
+image = Image.open('stonks.png')
+st.set_page_config(page_title='ApeBot',page_icon=image)
 
 hide_menu_style = """
         <style>
