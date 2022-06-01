@@ -17,7 +17,7 @@ hide_menu_style = """
         """
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
-
+@st.cache(suppress_st_warning=True)
 def remove_duplicate(l:list):
     return list(dict.fromkeys(l))
 
